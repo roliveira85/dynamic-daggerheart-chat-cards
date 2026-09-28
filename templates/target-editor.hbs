@@ -1,0 +1,26 @@
+<div class="dh-dynamic-enhancer">
+    <hr>
+    <div class="dh-enhancer-header">
+        <h4><i class="fas fa-crosshairs"></i> Alvos Adicionais</h4>
+        <button class="dh-add-target" title="Adicionar Alvos Selecionados">
+            <i class="fas fa-plus"></i>
+        </button>
+    </div>
+
+    {{#if targets.length}}
+    <ul class="dh-target-list">
+        {{#each targets}}
+        <li class="dh-target-item flexrow">
+            <img src="{{this.img}}" width="24" height="24">
+            <span class="target-name">{{this.name}}</span>
+            <a class="dh-apply-damage" data-target-id="{{this.id}}" title="Aplicar Dano"><i class="fas fa-tint"></i></a>
+            <a class="dh-remove-target" data-target-id="{{this.id}}"><i class="fas fa-trash"></i></a>
+        </li>
+        {{/each}}
+    </ul>
+    {{/if}}
+
+    <div class="dh-damage-override">
+        <button class="dh-edit-damage"><i class="fas fa-edit"></i> Modificar Dano Base</button>
+    </div>
+</div>

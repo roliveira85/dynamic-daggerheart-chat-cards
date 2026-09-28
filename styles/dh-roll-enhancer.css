@@ -1,0 +1,44 @@
+.dh-dynamic-enhancer {
+  margin-top: 5px;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  border: 1px solid var(--color-border-light-primary);
+}
+
+.dh-dynamic-enhancer hr {
+  margin: 5px 0;
+  border: 0;
+  border-top: 1px dashed #7a7971;
+}
+
+.dh-enhancer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--dh-font-header, "Signika", sans-serif);
+}
+
+.dh-enhancer-header h4 { margin: 0; font-size: 14px; }
+
+.dh-enhancer-header button {
+  width: 24px; height: 24px; line-height: 24px;
+  padding: 0; background: transparent;
+  border: 1px solid #7a7971; border-radius: 3px;
+  cursor: pointer;
+}
+
+.dh-enhancer-header button:hover { background: rgba(0, 0, 0, 0.1); }
+
+.dh-target-list { list-style: none; padding: 0; margin: 5px 0; }
+.dh-target-item {
+  display: flex; align-items: center; padding: 3px;
+  background: rgba(255, 255, 255, 0.4); border: 1px solid #c9c7b8;
+  border-radius: 3px; margin-bottom: 2px;
+}
+
+.dh-target-item img { border: none; border-radius: 50%; margin-right: 5px; }
+.dh-target-item .target-name { flex: 1; font-size: 13px; }
+.dh-target-item a { margin-left: 5px; color: #4a4a4a; cursor: pointer;}
+.dh-target-item a:hover { color: #ff0000; text-shadow: 0 0 5px red; }
+.dh-damage-override button { width: 100%; margin-top: 5px; background: rgba(0, 0, 0, 0.05); border: 1px solid #7a7971; }

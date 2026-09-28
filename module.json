@@ -1,21 +1,23 @@
 {
-    "id": "dynamic-daggerheart-chat-cards",
-    "title": "Dynamic Daggerheart Chat Cards",
-    "description": "Descreva aqui o que o módulo faz.",
-    "version": "1.0.0",
-    "compatibility": {
-      "minimum": "13",
-      "verified": "14"
-    },
-    "authors": [{ "name": "roliveira85" }],
-    "relationships": {
-      "systems": [
-        { "id": "daggerheart", "type": "system", "compatibility": {} }
-      ]
-    },
-    "esmodules": ["scripts/main.js"],
-    "styles": ["styles/main.css"],
-    "url": "https://github.com/roliveira85/dynamic-daggerheart-chat-cards",
-    "manifest": "https://github.com/roliveira85/dynamic-daggerheart-chat-cards/releases/latest/download/module.json",
-    "download": "https://github.com/roliveira85/dynamic-daggerheart-chat-cards/releases/latest/download/module.zip"
-  }
+  "id": "dynamic-daggerheart-chat-cards",
+  "title": "DH Roll Enhancer - Dynamic Chat Cards",
+  "description": "Transforma os Duality Rolls estáticos do Daggerheart em cards dinâmicos, permitindo adição de alvos. Somente GM por padrão.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "12"
+  },
+  "relationships": {
+    "systems": [{ "id": "daggerheart", "type": "system", "manifest": "https://github.com/Foundryborne/daggerheart/releases/latest/download/system.json" }]
+  },
+  "scripts": [
+    "scripts/main.js"
+  ],
+  "styles": [
+    "styles/dh-roll-enhancer.css"
+  ],
+  "languages": [
+    { "lang": "en", "name": "English", "path": "lang/en.json" },
+    { "lang": "pt-BR", "name": "Português (Brasil)", "path": "lang/pt-BR.json" }
+  ]
+}
